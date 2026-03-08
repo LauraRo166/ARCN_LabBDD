@@ -22,6 +22,11 @@ public class SearchSteps {
         try {
             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
+            Path chromeBinary = Path.of("/usr/local/bin/google-chrome");
+            if (Files.isExecutable(chromeBinary)) {
+                options.setBinary(chromeBinary.toString());
+            }
+
             options.addArguments("--headless");
             options.addArguments("--disable-gpu");
             options.addArguments("--no-sandbox");
@@ -54,6 +59,8 @@ public class SearchSteps {
 
     @After
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

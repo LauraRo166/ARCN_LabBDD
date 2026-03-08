@@ -1,4 +1,4 @@
-package {arcn-bdd-lab};
+package arcn_bdd_lab;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

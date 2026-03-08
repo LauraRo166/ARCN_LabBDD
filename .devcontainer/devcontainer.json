@@ -32,6 +32,6 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "sudo apt update",
+  "postCreateCommand": "sudo apt update && sudo ln -sf $(which chromedriver) /usr/local/bin/chromedriver",
   "remoteUser": "vscode"
 }

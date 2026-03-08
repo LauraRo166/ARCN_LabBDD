@@ -4,7 +4,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/features", glue="steps",
+@CucumberOptions(features = "src/test/java/arcn-bdd-lab/features", glue="arcn_bdd_lab.steps",
 monochrome = true,
 publish = true,
 plugin = {"pretty", "junit:target/JUnitReports/report.xml",

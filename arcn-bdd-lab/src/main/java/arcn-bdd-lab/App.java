@@ -1,4 +1,4 @@
-package {arcn-bdd-lab};
+package arcn_bdd_lab;
 
 /**
  * Hello world!

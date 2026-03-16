@@ -1,4 +1,4 @@
-# bdd-selenium-java-lab
+# Lab BDD with Selenium
 
 Proyecto de automatizacion BDD con Selenium WebDriver, ChromeDriver, Cucumber y Java.
 Configurado para ejecutarse con Maven en entornos como GitHub Codespaces.

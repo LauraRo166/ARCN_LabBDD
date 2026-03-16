@@ -1,3 +1,5 @@
+org/example/steps/KeyPressesSteps.class
 arcn_bdd_lab/steps/SearchSteps.class
 TestRunner.class
+org/example/pages/KeyPressesPage.class
 arcn_bdd_lab/AppTest.class

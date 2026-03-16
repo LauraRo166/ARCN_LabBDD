@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchSteps {
     private WebDriver driver;
 
-    @Before
+    @Before("@google")
     public void setUp() {
         try {
             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
@@ -57,7 +57,7 @@ public class SearchSteps {
         assert driver.getPageSource().contains(term);
     }
 
-    @After
+    @After("@google")
     public void tearDown() {
         if (driver != null) {
             driver.quit();
